@@ -1,0 +1,296 @@
+@import "mixins";
+
+
+$black: #000000;
+$grey: #1F1F1F;
+$light-grey: #808080;
+$white: #FFFFFF;
+
+$fire: #F71735;
+$water: #00A6FB;
+$earth: #27CE38;
+$air: #FFD400;
+
+$lime: #6BD425;
+
+
+
+
+html
+{
+        font-size: 16px;
+        font-family: Helvetica, sans-serif;
+
+        a,
+        a:hover,
+        a:visited
+        {
+                color: $light-grey;
+
+                text-decoration: none;
+        }
+}
+
+::selection
+{
+        background-color: $black;
+        color: $white;
+}
+
+
+
+
+.site
+{
+        @extend %flexbox;
+
+        .wallpaper
+        {
+                height: 100%;
+
+                top: 0;
+                left: 0;
+                right: 0;
+                position: fixed;
+                
+                z-index: -10;
+        }
+
+        .boxes
+        {
+                @extend %flexbox;
+
+                .group1,
+                .group2,
+                .group3,
+                .group4
+                {
+                        @extend %flexbox;
+
+                        width: 100%;
+
+                        margin-top: 6rem;
+
+                        transition: 100ms all;
+
+                        .group-icon
+                        {
+                                @extend %flexbox;
+
+                                width: 100%;
+
+                                margin-bottom: 2rem;
+
+                                font-size: 6rem;
+                        }
+
+                        .sorting
+                        {
+                                @extend %flexbox;
+
+                                a
+                                {
+                                        @extend %flexbox;
+
+                                        width: 6rem;
+                                        height: 6rem;
+
+                                        margin: 0.25rem;
+
+                                        border-radius: 0.5rem;
+
+                                        background-color: $grey;
+                                        
+                                        opacity: 0.75;
+                                        transition: 100ms all;
+                                }
+
+                                a:hover
+                                {
+                                        color: $light-grey;
+                                
+                                        box-shadow: 8px 8px 4px 0px rgba(255, 255, 255, 0.75);
+
+                                        transform: rotate(45deg);
+                                        transition: 100ms all;
+                                        z-index: 10;
+                                }
+
+                                i
+                                {
+                                        font-size: 3rem;
+                                }
+                        }
+                }
+
+                .group1:hover,
+                .group2:hover,
+                .group3:hover,
+                .group4:hover
+                {
+                        color: $black;
+                        
+                        transition: 100ms all;
+                }
+
+                .group1
+                {
+                        .Sfire
+                        {
+                                a:hover
+                                {
+                                        color: $fire;
+                                }
+                        }
+                }
+
+                .group1:hover
+                {
+                        color: $fire;
+                }
+
+                .group2
+                {
+                        .Swater
+                        {
+                                a:hover
+                                {
+                                        color: $water;
+                                }
+                        }
+                }
+
+                .group2:hover
+                {
+                        color: $water;
+                }
+
+                .group3
+                {
+                        .Searth
+                        {
+                                a:hover
+                                {
+                                        color: $earth;
+                                }
+                        }
+                }
+
+                .group3:hover
+                {
+                        color: $earth;
+                }
+
+                .group4
+                {
+                        .Sair
+                        {
+                                a:hover
+                                {
+                                        color: $air;
+                                }
+                        }
+                }
+
+                .group4:hover
+                {
+                        color: $air;
+                }
+        }
+
+        .footer
+        {
+                @extend %flexbox;
+
+                width: 10rem;
+
+                margin-top: 4rem;
+                margin-bottom: 2rem;
+
+                color: $white;
+
+                p,
+                a
+                {
+                        @extend %flexbox;
+
+                        margin: 0px;
+                        
+                        line-height: 2;
+                        font-weight: bold;
+                }
+
+                a,
+                a:hover,
+                a:visited
+                {
+                        padding: 0.25rem;
+
+                        width: 5rem;
+                        
+                        border-radius: 1rem;
+
+                        background-color: $white;
+                        color: $black;
+
+                        transition: 100ms all;
+                        cursor: pointer;
+                }
+        }
+}
+
+// Tablet
+@media (min-width: 768px) and (max-width: 1023px)
+{
+        .site
+        {
+                .boxes
+                {
+                        .group1,
+                        .group2,
+                        .group3,
+                        .group4
+                        {
+                                width: 50%;
+                        }
+                }
+        }
+}
+
+// Desktop
+@media screen and (min-width: 1024px)
+{
+        .site
+        {
+                .wallpaper
+                {
+                        width: 100%;
+                        height: auto;
+                }
+
+                .boxes
+                {
+                        .group1,
+                        .group2,
+                        .group3,
+                        .group4
+                        {
+                                width: 25%;
+
+                                .sorting
+                                {
+                                        width: 100%;
+                                }
+
+                        }
+                }
+
+                .footer
+                {
+                        bottom: 0;
+                        position: fixed;
+
+                        margin-bottom: 1rem;
+                }
+        }
+}
