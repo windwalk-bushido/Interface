@@ -55,7 +55,11 @@
 	.icon_red:hover,
 	.icon_green:hover,
 	.icon_blue:hover,
-	.icon_yellow:hover
+	.icon_yellow:hover,
+	.icon_red:active,
+	.icon_green:active,
+	.icon_blue:active,
+	.icon_yellow:active
 	{
 		transition: all 150ms;
 	}
@@ -73,6 +77,11 @@
 		box-shadow: 0 8px 32px 0 rgb(137, 41, 49);
 	}
 
+	.icon_red:active
+	{
+		background: linear-gradient(315deg, rgba(196, 59, 70, 1) 0%, rgba(78, 24, 28, 1) 100%);
+	}
+
 	.icon_green
 	{
 		box-shadow: 0px 8px 4px -1px rgba(46, 132, 74, 1);
@@ -84,6 +93,11 @@
 		background: linear-gradient(135deg, rgba(66, 189, 106, 1) 0%, rgba(26, 76, 42, 1) 100%);
 
 		box-shadow: 0 8px 32px 0 rgba(46, 132, 74, 1);
+	}
+
+	.icon_green:active
+	{
+		background: linear-gradient(315deg, rgba(66, 189, 106, 1) 0%, rgba(26, 76, 42, 1) 100%);
 	}
 
 	.icon_blue
@@ -99,6 +113,11 @@
 		box-shadow: 0 8px 32px 0 rgb(31, 84, 148);
 	}
 
+	.icon_blue:active
+	{
+		background: linear-gradient(315deg, rgba(44, 120, 211, 1) 0%, rgba(18, 48, 84, 1) 100%);
+	}
+
 	.icon_yellow
 	{
 		box-shadow: 0px 8px 4px -1px rgb(176, 117, 3);
@@ -112,14 +131,19 @@
 		box-shadow: 0 8px 32px 0 rgb(176, 117, 3);
 	}
 
+	.icon_yellow:active
+	{
+		background: linear-gradient(315deg, rgba(251, 167, 4, 1) 0%, rgba(100, 67, 2, 1) 100%);
+	}
+
 	@media (min-width: 1024px)
 	{
 		.default_icon
 		{
 			$size: 6rem;
 
-			width: $size;
-			height: $size;
+			//width: $size;
+			//height: $size;
 		}
 	}
 
