@@ -1,59 +1,59 @@
 <template>
 	
 	<Group>
-		<Icon :class="'icon_red'" bookmark_name="Facebook"/>
-		<Icon :class="'icon_red'" bookmark_name="Instagram"/>
-		<Icon :class="'icon_red'" bookmark_name="Youtube"/>
-		<Icon :class="'icon_red'" bookmark_name="Reddit"/>
+		<Icon :class="'icon_blue'" bookmark_name="Facebook"/>
+		<Icon :class="'icon_blue'" bookmark_name="Instagram"/>
+		<Icon :class="'icon_blue'" bookmark_name="Youtube"/>
+		<Icon :class="'icon_blue'" bookmark_name="Reddit"/>
 	</Group>
 
 	<Group>
-		<Icon :class="'icon_purple'" bookmark_name="Mastodon"/>
-		<Icon :class="'icon_purple'" bookmark_name="IMDB"/>
-		<Icon :class="'icon_purple'" bookmark_name="Github"/>
-		<Icon :class="'icon_purple'" bookmark_name="Dribbble"/>
+		<Icon :class="'icon_green'" bookmark_name="Mastodon"/>
+		<Icon :class="'icon_green'" bookmark_name="IMDB"/>
+		<Icon :class="'icon_green'" bookmark_name="Github"/>
+		<Icon :class="'icon_green'" bookmark_name="Dribbble"/>
 	</Group>
 
 	<Group>
-		<Icon :class="'icon_blue'" bookmark_name="Arch Linux"/>
-		<Icon :class="'icon_blue'" bookmark_name="The Pirate Bay"/>
-		<Icon :class="'icon_blue'" bookmark_name="Learn X in Y"/>
-		<Icon :class="'icon_blue'" bookmark_name="Lib. Gen."/>
+		<Icon :class="'icon_yellow'" bookmark_name="Arch Linux"/>
+		<Icon :class="'icon_yellow'" bookmark_name="The Pirate Bay"/>
+		<Icon :class="'icon_yellow'" bookmark_name="Learn X in Y"/>
+		<Icon :class="'icon_yellow'" bookmark_name="Lib. Gen."/>
 	</Group>
 
 	<Group>
-		<Icon :class="'icon_green'" bookmark_name="Google Drive"/>
-		<Icon :class="'icon_green'" bookmark_name="Mega Drive"/>
-		<Icon :class="'icon_green'" bookmark_name="Wikipedia"/>
-		<Icon :class="'icon_green'" bookmark_name="Akademija"/>
+		<Icon :class="'icon_red'" bookmark_name="Google Drive"/>
+		<Icon :class="'icon_red'" bookmark_name="Mega Drive"/>
+		<Icon :class="'icon_red'" bookmark_name="Wikipedia"/>
+		<Icon :class="'icon_red'" bookmark_name="Akademija"/>
 	</Group>
 
 	<Group>
-		<Icon :class="'icon_yellow'" bookmark_name="Font Awesome"/>
-		<Icon :class="'icon_yellow'" bookmark_name="Flaticon"/>
-		<Icon :class="'icon_yellow'" bookmark_name="Coolors"/>
-		<Icon :class="'icon_yellow'" bookmark_name="Unsplash"/>
+		<Icon :class="'icon_blue'" bookmark_name="Font Awesome"/>
+		<Icon :class="'icon_blue'" bookmark_name="Flaticon"/>
+		<Icon :class="'icon_blue'" bookmark_name="Coolors"/>
+		<Icon :class="'icon_blue'" bookmark_name="Unsplash"/>
 	</Group>
 
 	<Group>
-		<Icon :class="'icon_orange'" bookmark_name="CSS Tricks"/>
-		<Icon :class="'icon_orange'" bookmark_name="FreeCodeCamp"/>
-		<Icon :class="'icon_orange'" bookmark_name="MDN Docs"/>
-		<Icon :class="'icon_orange'" bookmark_name="W3Schools"/>
+		<Icon :class="'icon_green'" bookmark_name="CSS Tricks"/>
+		<Icon :class="'icon_green'" bookmark_name="FreeCodeCamp"/>
+		<Icon :class="'icon_green'" bookmark_name="MDN Docs"/>
+		<Icon :class="'icon_green'" bookmark_name="W3Schools"/>
 	</Group>
 
 	<Group>
-		<Icon :class="'icon_red'" bookmark_name="Sort Strings"/>
-		<Icon :class="'icon_red'" bookmark_name="Find Duplicates"/>
-		<Icon :class="'icon_red'" bookmark_name="Proton Mail"/>
-		<Icon :class="'icon_red'" bookmark_name="Google Mail"/>
+		<Icon :class="'icon_yellow'" bookmark_name="Sort Strings"/>
+		<Icon :class="'icon_yellow'" bookmark_name="Find Duplicates"/>
+		<Icon :class="'icon_yellow'" bookmark_name="Proton Mail"/>
+		<Icon :class="'icon_yellow'" bookmark_name="Google Mail"/>
 	</Group>
 
 	<Group>
-		<Icon :class="'icon_purple'" bookmark_name="Filter Music"/>
-		<Icon :class="'icon_purple'" bookmark_name="Deezer"/>
-		<Icon :class="'icon_purple'" bookmark_name="Twitch TV"/>
-		<Icon :class="'icon_purple'" bookmark_name="Wired News"/>
+		<Icon :class="'icon_red'" bookmark_name="Filter Music"/>
+		<Icon :class="'icon_red'" bookmark_name="Deezer"/>
+		<Icon :class="'icon_red'" bookmark_name="Twitch TV"/>
+		<Icon :class="'icon_red'" bookmark_name="Wired News"/>
 	</Group>
 
 	<Group>
@@ -78,10 +78,10 @@
 	</Group>
 
 	<Group>
-		<Icon :class="'icon_orange'" bookmark_name="Skriptarnica"/>
-		<Icon :class="'icon_orange'" bookmark_name="E-Indeks"/>
-		<Icon :class="'icon_orange'" bookmark_name="JS Cheatsheet"/>
-		<Icon :class="'icon_orange'" bookmark_name="Svetosavlje"/>
+		<Icon :class="'icon_red'" bookmark_name="Skriptarnica"/>
+		<Icon :class="'icon_red'" bookmark_name="E-Indeks"/>
+		<Icon :class="'icon_red'" bookmark_name="JS Cheatsheet"/>
+		<Icon :class="'icon_red'" bookmark_name="Svetosavlje"/>
 	</Group>
 
 </template>
@@ -125,7 +125,9 @@
 		align-items: center;
 		align-self: center;
 		align-content: center;
-		justify-content: space-evenly;
+		justify-content: center;
+
+		padding-bottom: 0.4rem;
 
 		font-size: 16px;
 		font-family: 'Montserrat', sans-serif;

@@ -1,7 +1,9 @@
 <template>
 	
 	<div class="group disable_select">
-		<slot></slot>
+		<slot>
+
+		</slot>
 	</div>
 
 </template>
@@ -53,7 +55,7 @@
 	{
 		.group
 		{
-			width: 15%;
+			width: 400px;
 		}
 	}
 

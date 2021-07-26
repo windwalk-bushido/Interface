@@ -44,6 +44,7 @@
 		font-size: 2rem;
 		font-weight: bold;
 		text-decoration: none;
+		text-shadow: 4px 4px 4px #000000;
 		
 		background: rgb(26, 26, 26);
 		color: #FFFFFF;
@@ -52,104 +53,70 @@
 	}
 
 	.icon_red:hover,
-	.icon_purple:hover,
-	.icon_blue:hover,
 	.icon_green:hover,
-	.icon_yellow:hover,
-	.icon_orange:hover
+	.icon_blue:hover,
+	.icon_yellow:hover
 	{
 		transition: all 150ms;
 	}
 
 	.icon_red
 	{
-		box-shadow: 0px 0px 32px 4px rgba(128, 26, 39, 1);
+		box-shadow: 0px 8px 4px -1px rgb(137, 41, 49);
 	}
 
 	.icon_red:hover
 	{
-		background: rgb(170, 34, 52);
-		background: linear-gradient(135deg, rgba(170, 34, 52, 1) 0%, rgba(85, 17, 26, 1) 100%);
+		background: rgb(196, 59, 70);
+		background: linear-gradient(135deg, rgba(196, 59, 70, 1) 0%, rgba(78, 24, 28, 1) 100%);
 
-		box-shadow: 0 8px 32px 0 rgba(128, 26, 39, 1);
-	}
-
-	.icon_purple
-	{
-		box-shadow: 0px 0px 32px 4px rgba(96,24,180, 1);
-	}
-
-	.icon_purple:hover
-	{
-		background: rgb(120, 30, 225);
-		background: linear-gradient(135deg, rgba(120, 30, 225, 1) 0%, rgba(72, 18, 135, 1) 100%);
-
-		box-shadow: 0 8px 32px 0 rgba(96,24,180, 1);
-	}
-
-	.icon_blue
-	{
-		box-shadow: 0px 0px 32px 4px rgba(0, 167, 204, 1);
-	}
-
-	.icon_blue:hover
-	{
-		background: rgb(0, 209, 255);
-		background: linear-gradient(135deg, rgba(0, 209, 255, 1) 0%, rgba(0, 125, 153, 1) 100%);
-
-		box-shadow: 0 8px 32px 0 rgba(0, 167, 204, 1);
-
-		color: #000000;
+		box-shadow: 0 8px 32px 0 rgb(137, 41, 49);
 	}
 
 	.icon_green
 	{
-		box-shadow: 0px 0px 32px 4px rgba(60, 144, 105, 1);
+		box-shadow: 0px 8px 4px -1px rgba(46, 132, 74, 1);
 	}
 
 	.icon_green:hover
 	{
-		background: rgb(75, 180, 131);
-		background: linear-gradient(135deg, rgba(75, 180, 131, 1) 0%, rgba(45, 108, 79, 1) 100%);
+		background: rgb(66, 189, 106);
+		background: linear-gradient(135deg, rgba(66, 189, 106, 1) 0%, rgba(26, 76, 42, 1) 100%);
 
-		box-shadow: 0 8px 32px 0 rgba(60, 144, 105, 1);
+		box-shadow: 0 8px 32px 0 rgba(46, 132, 74, 1);
+	}
 
-		color: #000000;
+	.icon_blue
+	{
+		box-shadow: 0px 8px 4px -1px rgb(31, 84, 148);
+	}
+
+	.icon_blue:hover
+	{
+		background: rgb(44, 120, 211);
+		background: linear-gradient(135deg, rgba(44, 120, 211, 1) 0%, rgba(18, 48, 84, 1) 100%);
+
+		box-shadow: 0 8px 32px 0 rgb(31, 84, 148);
 	}
 
 	.icon_yellow
 	{
-		box-shadow: 0px 0px 32px 4px rgba(218, 158, 38, 1);
+		box-shadow: 0px 8px 4px -1px rgb(176, 117, 3);
 	}
 
 	.icon_yellow:hover
 	{
-		background: rgb(243, 183, 63);
-		background: linear-gradient(135deg, rgba(243, 183, 63, 1) 0%, rgba(192, 132, 12, 1) 100%);
+		background: rgb(251, 167, 4);
+		background: linear-gradient(135deg, rgba(251, 167, 4, 1) 0%, rgba(100, 67, 2, 1) 100%);
 
-		box-shadow: 0 8px 32px 0 rgba(218, 158, 38, 1);
-
-		color: #000000;
-	}
-
-	.icon_orange
-	{
-		box-shadow: 0px 0px 32px 4px rgba(230, 64, 26, 1);
-	}
-
-	.icon_orange:hover
-	{
-		background: rgb(255, 89, 51);
-		background: linear-gradient(135deg, rgba(255, 89, 51, 1) 0%, rgba(204, 38, 0, 1) 100%);
-
-		box-shadow: 0 8px 32px 0 rgba(230, 64, 26, 1);
+		box-shadow: 0 8px 32px 0 rgb(176, 117, 3);
 	}
 
 	@media (min-width: 1024px)
 	{
 		.default_icon
 		{
-			$size: 8rem;
+			$size: 6rem;
 
 			width: $size;
 			height: $size;
