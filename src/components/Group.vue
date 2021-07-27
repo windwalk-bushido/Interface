@@ -1,6 +1,6 @@
 <template>
 	
-	<div class="group disable_select">
+	<div class="">
 		<slot>
 
 		</slot>
@@ -19,7 +19,8 @@
 
 <style lang="scss">
 
-	.group
+	.group,
+	.column
 	{
 		display: flex;
 		flex-wrap: wrap;
@@ -30,33 +31,14 @@
 		align-content: center;
 		justify-content: center;
 
+		min-width: 320px;
 		width: 100%;
-
-		padding: 1rem 0 1rem 0;
+		max-width: 700px;
 	}
 
-	.disable_select
+	.column
 	{
-		-webkit-user-select: none;  
-		-moz-user-select: none;    
-		-ms-user-select: none;      
-		user-select: none;
-	}
-
-	@media (min-width: 768px) and (max-width: 1023px)
-	{
-		.group
-		{
-			width: 50%;
-		}
-	}
-
-	@media (min-width: 1024px)
-	{
-		.group
-		{
-			width: 400px;
-		}
+		padding: 1rem 2rem 1rem 2rem;
 	}
 
 </style>
