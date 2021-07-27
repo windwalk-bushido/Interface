@@ -220,8 +220,8 @@
 		user-select: none;
 
 		color: #FFFFFF;
-		background: rgb(0,0,0);
-		background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(64,64,64,1) 100%);
+		background: rgb(0, 0, 0);
+		background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 45%, rgb(0, 0, 0) 100%);
 	}
 
 </style>
